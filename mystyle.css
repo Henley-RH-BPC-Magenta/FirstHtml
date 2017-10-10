@@ -1,0 +1,96 @@
+        body		      /* anything in the 'body' effects all the boxes */
+	{
+	font-family: verdana;
+	font-size: 12px;
+	margin: 5px;
+	background-color: black;   
+	}
+
+	.container	      /* container's a box to hold all the other boxes */
+	{
+	width:950px;
+	height:1000px;
+	padding: 5px;
+        margin: 0px auto;     
+	}
+
+	
+	.header               
+        {
+	height: 100px;
+	width: 950px;          
+	background-color: lightblue;
+	margin-bottom:-12px;
+	}
+
+	.nav               
+        {
+	height: 28px;
+	width: 950px;          
+	background-color: black;
+       
+	}
+
+
+	.left 
+	{
+	height: 900px;
+	width: 200px;
+        background-color: lightblue;
+	float: left;
+	}
+
+	.middle
+	{
+	height: 900px;
+	width: 540px;
+	color: black;
+	margin-left:5px;
+	margin-right:5px;
+    background-color: white;
+    float:left;
+	
+	}
+	#slideshow #slideshowWindow
+ {
+	width:500px;
+	height:257px;
+	margin:0;
+	padding:0;
+	position:relative;
+	overflow:hidden;
+}
+
+#slideshow #slideshowWindow  .slide
+ {
+	margin:0;
+	padding:0;
+	width:500px; 
+	height:257px;
+	float:left;
+	position:relative;
+}
+
+	.middle p
+	{
+	text-align:center;
+	}
+    .right
+	{
+	height: 900px;
+	width: 200px;
+	text-align: left;
+	background-color:lightblue;
+	float: left;
+	}
+html, body, #wrapper {
+   
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+#wrapper td {
+   
+   text-align: center;
+}
