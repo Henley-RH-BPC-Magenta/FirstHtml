@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <link rel="stylesheet" href="menu.css">
+
+</head>
+<script src="jquery-1.9.1.min.js">  </script>
+
+<script>
+	$(document).ready(function()
+ {
+		var currentPosition = 0;
+		var slideWidth = 500;     
+		var slides = $('.slide');
+		var numberOfSlides = slides.length;
+		var slideShowInterval;
+		var speed = 5000;                                             // 2 seconds, change it if you want
+		slideShowInterval = setInterval(changePosition, speed);
+		slides.wrapAll('<div id="slidesHolder"></div>')
+		slides.css({ 'float' : 'left' });
+		$('#slidesHolder').css('width', slideWidth * numberOfSlides);
+		
+		
+		function changePosition() 
+{
+			if(currentPosition == numberOfSlides - 1)
+ {
+				currentPosition = 0;
+			} else {
+				currentPosition++;
+			}
+			moveSlide();
+		}
+		function moveSlide()
+ {
+		$('#slidesHolder')
+		  .animate({'marginLeft' : slideWidth*(-currentPosition)});
+		}
+
+	});
+</script>
+
+<body>
+	
+<div class = "container"> 
+	
+
+	<div class = "header" > 
+	<img src="xcom test.png">
+		
+	</div>
+
+
+
+	<div class = "nav" >
+	    
+<ul id="drop-nav">
+
+
+  <li><a href= index.html>Home </a></li>
+  <li><a href= Factions.html>Faction </a>
+    <ul>
+      <li><a href= Resistance.html>Resistance </a></li>
+      <li><a href= Aliens.html> Aliens  </a></li>
+      <li><a href= Advent.html> Advent  </a></li>
+    </ul>
+  </li>
+
+
+  <li><a href="#"> Equipment</a>
+    <ul>
+      <li><a href= Weapons.html> Weapons </a></li>
+      <li><a href= Armour.html>Armour </a></li>
+      <li><a href= PCSAddons.html> PCS </a></li>
+      <li><a href= ModsForEquipment.html>Equipment mod</a></li>
+    </ul>
+  </li>
+
+
+  <li><a href="#"> Contact </a>
+    <ul>
+      <li><a href= Enquiries.html>Enquiries </a></li>
+      <li><a href= About.html>About </a></li>
+    </ul>
+  </li>
+
+</ul>     
+	</div>
+
+
+
+
+
+	<div class = "left">
+                   
+	</div>
+
+	
+
+<div class = "middle">
+
+      	<div id="slideshow">
+		<div id="slideshowWindow">
+    
+				<div class =  slide>
+					<img src = 11.jpg>
+				</div>
+       
+        
+				<div class = slide>
+					<img src = Advent.jpg>
+				</div>
+				
+        </div>
+   </div>  
+
+ <p> Hello Commander, I hope you find you way round this website easy enough. The only complete sections are the Factions tab.  
+   
+   
+   
+   
+   </div>
+
+
+
+
+<div class = "right">
+
+  
+
+</div>
+
+
+
+
+</div>
+
+</html>
+</body>	
